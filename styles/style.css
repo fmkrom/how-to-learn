@@ -2,6 +2,7 @@
     font-family: "Helvetica Neue", "Arial", sans-serif;
     min-width: 1100px;
     max-width: 1600px;
+    margin: 0 auto;
 
 }
 
@@ -21,7 +22,7 @@
     justify-content: center;
 }
 
-.header__logo {
+.logo_place_header {
     position: absolute;
     left: 64px;
     top: 30px;
@@ -40,8 +41,8 @@
     max-width: 730px;
     margin-left: 64px;
     
-    line-height: 102px;
-    font-size: 96px;
+    line-height: 96px;
+    font-size: 102px;
     font-weight: bold;
 
     z-index: 2;
@@ -111,7 +112,7 @@
     justify-content: space-between;
 }
 
-.brief {
+.two-columns_brief {
     width: 175px;
     line-height: 1.2;
     font-size: 18px;
@@ -119,7 +120,7 @@
     color: #2f80ed;
 }
 
-.main-text {
+.two-columns_main-text {
     width: 80%;
     min-width: 784px;
 
@@ -128,15 +129,18 @@
     font-weight: normal;
 }
 
-.span-accent {
+.two-columns_paragraph {
+    margin-bottom: 30px;
+}
+
+.two-columns_paragraph:last-of-type {
+    margin-bottom: 0;
+}
+
+.two-columns_span-accent {
     line-height: 34px;
     font-size: 24px;
     font-weight: bold;
-}
-
-.paragraph-interlinear {
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 /*Свойства блока №2 закончились*/
@@ -389,7 +393,7 @@ font-weight: normal;
     position: relative;
 }
 
-.footer__column_content-logo {
+.logo_place_footer {
     background-image: url("../images/logo_place_footer.svg");
     height: 35px;
     width:183px;
@@ -423,13 +427,13 @@ font-weight: normal;
 }
 
 .footer__column_links {
-    margin-top:20px;
-    margin-bottom:16px;
+    margin-top: 20px;
+    margin-bottom: 16px;
 }
 
 li {
     list-style-type: none;
-   }
+}
    
 ul {
     margin-left: 0;
@@ -442,6 +446,8 @@ ul {
     line-height: 30px;
     font-size: 18px;
     font-weight: bold;
+    margin-top:0;
+    margin-bottom:0;
 }
 
 .footer__social-icon {
