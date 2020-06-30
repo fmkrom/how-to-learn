@@ -1,3 +1,5 @@
+/*header { border: 1px solid red; } footer { border: 1px solid red; } section { border: 1px solid red; } div { border: 1px solid red; } p { border: 1px solid red; } h1 { border: 1px solid red; } h2 { border: 1px solid red; } h3 { border: 1px solid red; } h4 { border: 1px solid red; } h5 { border: 1px solid red; } h6 { border: 1px solid red; } p { border: 1px solid red; } a { border: 1px solid red; } h2 { border: 1px solid red; } h3 { border: 1px solid red; } h4 { border: 1px solid red; } h5 { border: 1px solid red; } h6 { border: 1px solid red; } p { border: 1px solid red; } nav { border: 1px solid red; } ul { border: 1px solid red; } li { border: 1px solid red; }*/
+
 .page {
     font-family: "Helvetica Neue", "Arial", sans-serif;
     min-width: 1100px;
@@ -12,17 +14,14 @@
     min-height: 600px;
     max-height: 756px;
     height: 756px;
-
     background-color: #f2f2f2;
-    
     position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.logo_place_header {
+.logo__place_header {
     position: absolute;
     left: 64px;
     top: 30px;
@@ -45,7 +44,7 @@
     font-size: 102px;
     font-weight: bold;
 
-    z-index: 2;
+    z-index: 3;
 }
 
 .header__subtitle {
@@ -59,6 +58,10 @@
     font-weight: normal;
 }
 
+.header__link {
+    color: #2f80ed;
+    text-decoration: none;
+}
 
 .header__main-illustraion {
     width: 765px;
@@ -103,7 +106,6 @@
 
 .two-columns {
     margin-top: 100px;
-    margin-bottom: 100px;
     width: 80%;
 
     position: relative;
@@ -118,9 +120,11 @@
     font-size: 18px;
     font-weight: normal;
     color: #2f80ed;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.two-columns_main-text {
+.two-columns__main-text {
     width: 80%;
     min-width: 784px;
 
@@ -129,11 +133,12 @@
     font-weight: normal;
 }
 
-.two-columns_paragraph {
+.two-columns__paragraph {
+    margin-top: 0;
     margin-bottom: 30px;
 }
 
-.two-columns_paragraph:last-of-type {
+.two-columns__paragraph:last-of-type {
     margin-bottom: 0;
 }
 
@@ -171,7 +176,8 @@
 .section-subtitle {
     width: 60%;
     text-align:center;
-
+    margin-top:0;
+    margin-bottom:0;
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
@@ -185,8 +191,6 @@
     
     display:flex;
     flex-wrap:wrap;
-
-    align-items: space-between;
     justify-content: space-between;
 }
 
@@ -195,18 +199,20 @@
     margin-top:60px;
 }
 
-.table__cell_heading {
+.table__heading {
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
-.table__cell_text {
+.table__text {
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
-    margin-bottom: 20px;    
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 /*Свойства блока №3 закончились*/
@@ -217,6 +223,7 @@
     background-color: #f2f2f2;
     height:790px;
 
+    padding-top:100px;
     position: relative;
 
     display: flex;
@@ -226,20 +233,17 @@
 
 .feynman__title {
     width:648px;
-    margin-top:100px;
+    margin-top:0;
     margin-bottom:70px;
-
     line-height: 1.15;
     font-size: 120px;
     font-weight: bold;
-    
     text-align: center;
-
     z-index: 1;
-  
-
 }
+
 .feynman__subtitle {
+    margin-top:0;
     line-height: 51px;
     font-size: 36px;
     font-weight: normal;
@@ -280,7 +284,7 @@
 
 /*Свойства блока №5 - Принципы Кауфмана */
 
-.kaufman_theme_dark {
+.kaufman {
  background-color: #1f1f1f;
  color: white;
 
@@ -296,7 +300,7 @@
 
 /*5.1. Блок "Кауфман": свойства заголовка и подзаголовка*/
 
-.section-title__theme_dark {
+.section-title_theme_dark {
     margin-top: 90px;
     margin-bottom: 20px;
     width:60%;
@@ -306,27 +310,25 @@
     font-weight: bold;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
     width:60%;
     text-align: center;
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
+    margin-top:0;
 }
 
 /*5.2. Блок "Кауфман": свойства таблицы*/
 
-.table__theme_dark {
+.table_theme_dark {
     width:1100px;
     margin-left:auto;
     margin-right:auto;
     margin-bottom:100px;
     display:flex;
     flex-wrap:wrap;
-
-    align-items: space-between;
     justify-content: space-between;
-
     z-index: 1;
 }
 
@@ -335,21 +337,24 @@
     width: 200px;
 }
 
-.table__cell_heading_theme_dark {
+.table__heading_theme_dark {
     line-height: 1.15;
     font-size:24px;
     font-weight: bold;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 
-.table__cell_text_theme_dark  {
+.table__text_theme_dark  {
 line-height: 1.2;
 font-size:18px;
 font-weight: normal;
+margin-bottom: 0;
+margin-top: 0;
 }
 
 
-.kaufman_triangle {
+.kaufman__triangle {
     background-image:url("../images/kaufman-triangle.svg");
     object-fit: contain;
     
@@ -367,8 +372,7 @@ font-weight: normal;
 /*Свойства блока №6 - Подвал*/
 
 .footer {
-    max-height:350px;
-    height:350px;
+    min-height:350px;
     background-color: #1f1f1f;
     color:white;
     
@@ -380,17 +384,18 @@ font-weight: normal;
     margin-top:60px;
     margin-bottom: 40px;
     width: 90%;
-    height: 250px;
     display:flex;
-    justify-content: space-around;
+    flex-direction:row;
+    justify-content: space-between;
 }
 
 /*Левая секция подвала и ее свойства*/
 
-.footer__column_content-copyright {
-    height: 100%;
-    width: 50%;
-    position: relative;
+.footer__column_content_copyright {
+    flex-basis:711px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
 }
 
 .logo_place_footer {
@@ -399,53 +404,47 @@ font-weight: normal;
     width:183px;
 }
 
-.footer__column_content-author {
-    position:absolute;
-    left:0;
-    bottom: 0;
-    margin-top: 18px;
-    margin-bottom: 18px;
+.footer__author {
+    margin-top:18px;
+    margin-bottom:18px;
+
 }
 
 /*Правая сеция подвала и ее свойства*/
 
-/*Колонка "Практикум" правой секйции*/
-
-.footer__column_content-info {
-    height: 250px;
-    width: auto;
-    position: relative;
+.footer__column-links {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
 }
 
-/*Колонка "Соцсети" правой секйции*/
-
-.footer__column_content-social {
-    height: 100%;
-    width: auto;
-    position: relative;
-
+.footer__column_link {
+    color:white;
+    text-decoration: none;
+    margin-top:0;
+    margin-bottom:0;
 }
 
-.footer__column_links {
-    margin-top: 20px;
-    margin-bottom: 16px;
-}
 
-li {
+/*li {
     list-style-type: none;
+    color:white;
+    text-decoration:none;
 }
    
 ul {
     margin-left: 0;
     padding-left: 0;
+    margin-bottom: 16px;
+    margin-top: 20px;
 }
-
+*/ 
 /*Это свойства заголовков подвала*/
 
-.footer__column_heading {
+.footer__column-heading {
+    font-weight: bold;
     line-height: 30px;
     font-size: 18px;
-    font-weight: bold;
     margin-top:0;
     margin-bottom:0;
 }
@@ -453,6 +452,10 @@ ul {
 .footer__social-icon {
     height: 16px;
     width: 16px;
+    color: white;
+    text-decoration:none;
+    margin-right:5px;
 }
+
 
 /*Свойства блока №6 (Подвала) закончились*/
