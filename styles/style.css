@@ -341,8 +341,6 @@
 .footer {
     min-height:350px;
     background-color: #1f1f1f;
-    color:white;
-    
     display: flex;
     justify-content: center;
 }
@@ -382,6 +380,10 @@
 
 /*Правая сеция подвала и ее свойства*/
 
+.footer__column {
+    color:white;
+}
+
 .footer__column-heading {
     font-weight: bold;
     line-height: 30px;
@@ -392,7 +394,6 @@
 
 .footer__column-links {
     font-weight: normal;
-    color:white;
     text-decoration: none;
     list-style-type: none; 
     text-decoration:none;
@@ -406,7 +407,6 @@
 
 .footer__column-link {
     font-weight: normal;
-    color:white;
     text-decoration: none;
     vertical-align:top;
     margin-top:0;
