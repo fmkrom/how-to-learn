@@ -8,8 +8,6 @@
   <title>Научиться учиться</title>
 </head>
 
-<body>
-
 <!--Страница открывается-->
 
 <div class ="page">
@@ -18,13 +16,13 @@
 
   <header class="header">
     
-    <div class="logo__place_header"></div>
+    <div class="logo logo_place_header"></div> <!--Исправлено после проверки 01.07.2020: тегу присвоены два класса-->
 
     <h1 class="header__title">Научиться учиться</h1>
         
     <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a href="https://praktikum.yandex.ru" class="header__link">Узнать &rarr;</a></p>
         
-    <img src="./images/header-image.png" class="header__main-illustraion" alt="Опять двойка">
+    <img src="./images/header-image.png" class="header__main-illustration" alt="Опять двойка"> <!--Исправлено после проверки 01.07.2020: исправлена опечатка-->
         
     <div class="header__square-pic"></div>
 
@@ -38,12 +36,14 @@
     
     <div class="two-columns">
 
-      <h5 class="two-columns_brief">Главные проблемы в обучении</h5>
+      <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
+      <!--02.07.2020 - исправлена ошибка после проверки 01.07.2020: имя блока "two-columns__" отделено от имени элемента "brief" 
+      двумя пробелами. Тег h5 заменен на h2-->
             
       <div class="two-columns__main-text">
       
         <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</p>
-        <p class="two-columns__paragraph"><span class="two-columns_span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
+        <p class="two-columns__paragraph"><span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p> <!--02.07.2020 - исправлена ошибка после проверки 01.07.2020: имя блока и имя элемента разделены двойным нижним пробелом: two-columns__span-accent-->
         <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
       
       </div>
@@ -58,56 +58,51 @@
 
   <section class="digits">
   
-    <h2 class="section-title">
-    Цифры и факты
-    </h2>
-
-    <p class="section-subtitle">
-    Про учёбу и мозг
-    </p>
+    <h2 class="section-title">Цифры и факты</h2>
+    <p class="section-subtitle">Про учёбу и мозг</p>
 
     <div class="table">
 
       <div class="table__cell">
         <h4 class ="table__heading">86 миллиардов</h4>
-        <h5 class="table__text">Число нейронов в мозге человека</h5>
+        <p class="table__text">Число нейронов в мозге человека</p> <!--02.07.2020 - исправлено после проверки 01.07.2020 - Тег заголовка заменен тегом параграфа. То же сделано во всех секциях этого блока и в блоке .kaufman -->
       </div>
 
       <div class="table__cell">
         <h4 class ="table__heading">2.1 миллиарда</h4>
-        <h5 class="table__text">Число нуждающихся в повышении квалификации</h5>
-        <h5 class="table__text">Всемирный Банк, 2017</h5>
+        <p class="table__text">Число нуждающихся в повышении квалификации</p>
+        <p class="table__text">Всемирный Банк, 2017</p>
       </div>
 
       <div class="table__cell">
         <h4 class ="table__heading">1000 терабайт</h4>
-        <h5 class="table__text">Объём памяти человека</h5>
+        <p class="table__text">Объём памяти человека</p>
       </div>
 
       <div class="table__cell">
         <h4 class ="table__heading">500 триллионов</h4>
-        <h5 class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека</h5>
+        <p class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека</p>
       </div>
 
       <div class="table__cell">
         <h4 class ="table__heading">420 миллионов</h4>
-        <h5 class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</h5>
-        <h5 class="table__text">Всемирный Банк, 2017</h5>
+        <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
+        <p class="table__text">Всемирный Банк, 2017</p>
       </div>
 
       <div class="table__cell">
         <h4 class ="table__heading">17–20 лет</h4>
-        <h5 class="table__text">Пик обучаемости</h5>
+        <p class="table__text">Пик обучаемости</p>
       </div>
 
       <div class="table__cell">
         <h4 class ="table__heading">1885 год</h4>
-        <h5 class="table__text">Открытие кривой забывания</h5>
+        <p class="table__text">Открытие кривой забывания</p>
       </div>
 
       <div class="table__cell">
         <h4 class ="table__heading">1889 год</h4>
-        <h5 class="table__text">Открытие условного рефлекса</h5>
+        <p class="table__text">Открытие условного рефлекса</p>
       </div>
 
     </div>
@@ -135,63 +130,63 @@
 
 <section class="kaufman">
 
-  <h2 class="section-title_theme_dark">Принципы обучения</h2>
-  <p class="section-subtitle_theme_dark">от Джоша Кауфмана</p>
+  <h2 class="section-title section-title_theme_dark">Принципы обучения</h2> <!--02.07.2020 - исправлено после проверки 01.07.2020: теперь в этом блоке два класса: section-title section-title_theme_dark. Первый регулирует основные характеристики, второй - цвет шрифта. См.строки 170 и 312 кода CSS-->
+  <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p> <!--02.07.2020 - исправлено после проверки 01.07.2020: теперь в этом блоке два класса вместо одного. Первый регулирует основные характеристики, второй - цвет шрифта. См. соотв. строки кода CSS-->
 
-  <div class="kaufman__triangle"></div>
+  <div class="kaufman__triangle"></div> <!--02.07.2020 - исправлено после проверки 01.07.2020: Добавлено CSS свойство: background-size: cover; - см. строку 356 CSS кода-->
 
 <!--ЗДЕСЬ НАЧИНАЕТСЯ ТАБЛИЦА БЛОКА КАУФМАН-->
 
-  <div class="table_theme_dark">
+  <div class="table table_theme_dark"> <!--02.07.2020 - исправлено после проверки 01.07.2020: теперь в этом блоке два класса вместо одного. Первый регулирует основные характеристики, второй - цвет шрифта. См. соотв. строки кода CSS-->
   
-    <div class="table__cell_theme_dark">
-      <h4 class ="table__heading_theme_dark">1</h4>
-      <h5 class="table__text_theme_dark">Выберите привлекательный проект.</h5>
+    <div class="table__cell table__cell_theme_dark"> <!--02.07.2020 - исправлено после проверки 01.07.2020: теперь в этом блоке два класса вместо одного. Первый регулирует основные характеристики, второй - цвет шрифта. См. соотв. строки кода CSS-->
+      <h4 class ="table__heading table__heading_theme_dark">1</h4> <!--02.07.2020 - исправлено после проверки 01.07.2020: теперь в этом блоке два класса вместо одного. Первый регулирует основные характеристики, второй - цвет шрифта. См. соотв. строки кода CSS-->
+      <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p> <!--02.07.2020 - исправлено после проверки 01.07.2020: теперь в этом блоке два класса вместо одного. Первый регулирует основные характеристики, второй - цвет шрифта. См. соотв. строки кода CSS. То же самое в строках 152-195 html кода-->
     </div>
 
-    <div class="table__cell_theme_dark">
-      <h4 class ="table__heading_theme_dark">2</h4>
-      <h5 class="table__text_theme_dark">Сосредоточьтесь на каком-то одном навыке.</h5>
+    <div class="table__cell table__cell_theme_dark">
+      <h4 class ="table__heading table__heading_theme_dark">2</h4>
+      <p class="table__text table__text_theme_dark">Сосредоточьтесь на каком-то одном навыке.</p>
     </div>
 
-    <div class="table__cell_theme_dark">
-      <h4 class ="table__heading_theme_dark">3</h4>
-      <h5 class="table__text_theme_dark">Определите целевой уровень мастерства.</h5>
+    <div class="table__cell table__cell_theme_dark">
+      <h4 class ="table__heading table__heading_theme_dark">3</h4>
+      <p class="table__text table__text_theme_dark">Определите целевой уровень мастерства.</p>
     </div>
 
-    <div class="table__cell_theme_dark">
-      <h4 class ="table__heading_theme_dark">4</h4>
-      <h5 class="table__text_theme_dark">Разбейте навык на элементы.</h5>
+    <div class="table__cell table__cell_theme_dark">
+      <h4 class ="table__heading table__heading_theme_dark">4</h4>
+      <p class="table__text table__text_theme_dark">Разбейте навык на элементы.</p>
     </div>
 
-    <div class="table__cell_theme_dark">
-      <h4 class ="table__heading_theme_dark">5</h4>
-      <h5 class="table__text_theme_dark">Приготовьте всё необходимое для занятий.</h5>
+    <div class="table__cell table__cell_theme_dark">
+      <h4 class ="table__heading table__heading_theme_dark">5</h4>
+      <p class="table__text table__text_theme_dark">Приготовьте всё необходимое для занятий.</p>
     </div>
 
-    <div class="table__cell_theme_dark">
-      <h4 class ="table__heading_theme_dark">6</h4>
-      <h5 class="table__text_theme_dark">Устраните препятствия для занятий.</h5>
+    <div class="table__cell table__cell_theme_dark">
+      <h4 class ="table__heading table__heading_theme_dark">6</h4>
+      <p class="table__text table__text_theme_dark">Устраните препятствия для занятий.</p>
     </div>
 
-    <div class="table__cell_theme_dark">
-      <h4 class ="table__heading_theme_dark">7</h4>
-      <h5 class="table__text_theme_dark">Выделите специальное время для занятий.</h5>
+    <div class="table__cell table__cell_theme_dark">
+      <h4 class ="table__heading table__heading_theme_dark">7</h4>
+      <p class="table__text table__text_theme_dark">Выделите специальное время для занятий.</p>
     </div>
 
-    <div class="table__cell_theme_dark">
-      <h4 class ="table__heading_theme_dark">8</h4>
-      <h5 class="table__text_theme_dark">Создайте быстрые петли обратной связи.</h5>
+    <div class="table__cell table__cell_theme_dark">
+      <h4 class ="table__heading table__heading_theme_dark">8</h4>
+      <p class="table__text table__text_theme_dark">Создайте быстрые петли обратной связи.</p>
     </div>
 
-    <div class="table__cell_theme_dark">
-      <h4 class ="table__heading_theme_dark">9</h4>
-      <h5 class="table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.</h5>
+    <div class="table__cell table__cell_theme_dark">
+      <h4 class ="table__heading table__heading_theme_dark">9</h4>
+      <p class="table__text table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
     </div>
     
-    <div class="table__cell_theme_dark">
-      <h4 class ="table__heading_theme_dark">10</h4>
-      <h5 class="table__text_theme_dark">Уделяйте внимание количеству и скорости.</h5>
+    <div class="table__cell table__cell_theme_dark">
+      <h4 class ="table__heading table__heading_theme_dark">10</h4>
+      <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
     </div>
      
   </div>
@@ -208,31 +203,31 @@
 
   <!--Клолнка автор и копирайт - должна быть шириной 50%--> 
     <div class ="footer__column_content_copyright">
-      <div class="logo_place_footer"></div>
+      <div class="logo logo_place_footer"></div>
       <p class="footer__author">&copy; 2020 Ефим Романенко</p>
     </div>
     
   <!--Колонка Навигация-->   
   <nav class ="footer__column_content_info">
     <h3 class="footer__column-heading">О Практикуме</h3>
-    <div class="footer__column-links">
-        <p class="footer__column-link"><a>Главная</a></p>
-        <p class="footer__column-link"><a>Концепция</a></p>
-        <p class="footer__column-link"><a>Наставники</a></p>
-    </div>
+    <ul class="footer__column-links">
+        <li><a class="footer__column-link">Главная</a></li> <!--02.07.2020 - исправлено после проверки 01.07.2020: ссылки не обернуты в параграфы, а сделаны пунктами списка. То же самое - в строках 220-221 и 229-231 html кода-->
+        <li><a class="footer__column-link">Концепция</a></li>
+        <li><a class="footer__column-link">Наставники</a></li>
+    </ul>
   </nav>
   
 <!--Колонка Соцсети-->   
   <nav class ="footer__column_content_social">
     <h3 class="footer__column-heading">Соцсети</h3>
-    <div class="footer__column-links">
-      <p><a href="https://www.facebook.com" class="footer__column_link"><img src="./images/facebook_color_white.svg" class="footer__social-icon" alt="FB">Facebook</a></p>
-      <p><a href="https://vk.com" class="footer__column_link"><img src="./images/instagram_color_white.svg" class="footer__social-icon" alt="VK">Вконтакте</a></p>
-      <p><a href="https://www.instagram.com" class="footer__column_link"><img src="./images/vk_color_white.svg" class="footer__social-icon" alt="INST">Instagram</a></p>
-    </div>
+    <ul class="footer__column-links">
+      <li><a href="https://www.facebook.com" class="footer__column-link"><img src="./images/facebook_color_white.svg" alt="FB" class="footer__social-icon">Facebook</a></li> <!--02.07.2020 - исправлено после проверки 01.07.2020: теперь отступы между строками ссылок визуально похожи на те, что в брифе. См. строки 423-444 кода CSS-->
+      <li><a href="https://vk.com" class="footer__column-link"><img src="./images/vk_color_white.svg" alt="VK" class="footer__social-icon">Вконтакте</a></li>
+      <li><a href="https://www.instagram.com" class="footer__column-link"><img src="./images/instagram_color_white.svg" alt="INST" class="footer__social-icon">Instagram</a></li>
+    </ul>
   </nav>
 
-  </section>
+</section>
   
 </footer>
 
