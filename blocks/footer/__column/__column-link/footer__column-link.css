@@ -1,0 +1,15 @@
+.footer__column-link {
+    font-weight: normal;
+    text-decoration: none;
+    vertical-align:top;
+    margin-top:0;
+    margin-bottom:0;
+
+    transition-property: opacity;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+}
+   
+    .footer__column-link:hover {
+    opacity:40%;
+}

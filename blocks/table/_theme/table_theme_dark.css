@@ -1,0 +1,8 @@
+@import "../__cell/_theme/table__cell_theme_dark.css"; 
+@import "../__heading/_theme/table__heading_theme_dark.css";
+@import "../__text/_theme_dark/table__text_theme_dark.css";
+
+.table_theme_dark {
+    z-index: 1;
+}
+

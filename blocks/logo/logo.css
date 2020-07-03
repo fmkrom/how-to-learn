@@ -1,0 +1,7 @@
+@import "./_place_footer/logo_place_footer.css";
+@import "./_place_header/logo_place_header.css";
+
+.logo {
+    background-repeat: no-repeat;
+    width: 183px;
+}

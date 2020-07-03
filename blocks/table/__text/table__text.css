@@ -1,0 +1,9 @@
+@import "./_theme_dark/table__text_theme_dark.css";
+
+.table__text {
+    margin-top:20px;
+    margin-bottom:0;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+}
