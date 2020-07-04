@@ -3,5 +3,11 @@
     height: 38px;
     margin-right:0;
     margin-left:0;
+    transition-property: opacity;
+	transition-duration: 4s;
+    transition-timing-function: linear;
 }
 
+.resources__logo:hover {
+    opacity:40%;
+}
