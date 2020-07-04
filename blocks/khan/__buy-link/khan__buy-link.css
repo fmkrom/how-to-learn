@@ -1,10 +1,11 @@
 .khan__buy-link {
+    margin-top: 0;
     line-height:42px;
     font-size:30px;
     font-weight:normal;
     color:#2f80ed;
     text-decoration:none;
-    margin-left:48px;
+    align-self: baseline;
 
     transition-property: opacity;
 	transition-duration: 4s;
